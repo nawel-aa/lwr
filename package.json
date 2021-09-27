@@ -1,0 +1,23 @@
+{
+  "name": "lwr-static",
+  "version": "0.0.1",
+  "license": "MIT",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "clean": "rm -rf __lwr_cache__",
+    "dev": "node scripts/start-server.mjs",
+    "start": "MODE=prod node scripts/start-server.mjs",
+    "start:amd": "MODE=compat node scripts/start-server.mjs"
+  },
+  "dependencies": {
+    "@avonni/base-components": "0.0.11",
+    "@salesforce-ux/design-system": "^2.14.2",
+    "lightning-base-components": "^1.11.2-alpha",
+    "lwc": "^2.5.1",
+    "lwr": "^0.4.4"
+  },
+  "engines": {
+    "node": ">=14.15.4 <15"
+  }
+}

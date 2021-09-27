@@ -1,0 +1,40 @@
+{
+    "lwc": {
+        "modules": [
+            {
+                "dir": "$rootDir/src/modules"
+            },
+            {
+                "npm": "lightning-base-components"
+            },
+            {
+                "npm": "@avonni/base-components"
+            }
+        ]
+    },
+    "assetProviders": ["$rootDir/node_modules/@salesforce-ux/design-system/assets"],
+    "bundleConfig": { "exclude": ["lwc"] },
+    "routes": [
+
+        {
+            "id": "Home component",
+            "path": "/",
+            "rootComponent": "pages-home",
+            "properties": {
+                "title": "Truc"
+            }
+        },
+        {
+            "id": "Markup page",
+            "path": "/markup",
+            "contentTemplate": "$contentDir/markup.md",
+            "layoutTemplate": "$layoutsDir/main_layout.njk"
+        },
+        {
+            "id": "Markup page with component layout?",
+            "path": "/markup-component",
+            "contentTemplate": "$contentDir/markup.md",
+            "layoutTemplate": "$layoutsDir/main_layout.njk"
+        }
+    ]
+}
